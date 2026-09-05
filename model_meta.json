@@ -1,0 +1,55 @@
+{
+  "model_name": "Decision Tree",
+  "features": [
+    "ComWeight",
+    "ComAgeRec",
+    "MinPlayers",
+    "MaxPlayers",
+    "MfgPlaytime_log",
+    "YearPublished",
+    "NumUserRatings_log",
+    "NumWant_log",
+    "NumExpansions",
+    "BestPlayers_known",
+    "Kickstarted",
+    "IsReimplementation",
+    "Cat:Thematic",
+    "Cat:Strategy",
+    "Cat:War",
+    "Cat:Family",
+    "Cat:CGS",
+    "Cat:Abstract",
+    "Cat:Party",
+    "Cat:Childrens"
+  ],
+  "classes": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "target": "Rating",
+  "sklearn_version": "1.6.1",
+  "test_macro_f1": 0.7002,
+  "test_accuracy": 0.6988,
+  "log_transformed": [
+    "NumUserRatings_log",
+    "NumWant_log",
+    "MfgPlaytime_log"
+  ],
+  "defaults": {
+    "MinPlayers": 2,
+    "MaxPlayers": 4,
+    "NumExpansions": 0,
+    "BestPlayers_known": 0,
+    "Kickstarted": 0,
+    "IsReimplementation": 0,
+    "Cat:Thematic": 0,
+    "Cat:Strategy": 0,
+    "Cat:War": 0,
+    "Cat:Family": 0,
+    "Cat:CGS": 0,
+    "Cat:Abstract": 0,
+    "Cat:Party": 0,
+    "Cat:Childrens": 0
+  }
+}
