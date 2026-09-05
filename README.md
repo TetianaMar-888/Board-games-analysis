@@ -12,15 +12,10 @@ accuracy, 0.211 macro-F1).
 
 ## Setup
 
-The model artefacts are not in this repository. Copy them from the training
-notebook output into `app/`:
-
-```
-app/model.pkl          # the fitted sklearn Pipeline
-app/model_meta.json    # feature list, class order, defaults, metrics
-```
-
-Both are written by the final cell of `notebooks/DM1_03_classification_regression.ipynb`.
+The model artefacts ship with this repository — `app/model.pkl` (53 KB) and
+`app/model_meta.json`. Both are written by the final cell of
+`notebooks/DM1_03_classification_regression.ipynb`; to regenerate them after
+retraining, run that cell and copy its output over the files in `app/`.
 
 ### Run with Docker
 
